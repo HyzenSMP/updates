@@ -26,6 +26,14 @@ Every command on Hyzen SMP. Kept up to date as features ship; the date of the la
 - `/pay <player> <amount>`
 - `/baltop` richest players
 
+## Hyzen Coins
+
+A second currency, earned just by playing: 1 coin every 10 minutes AFK, 8 moving around, 6 mining or building, 5 fighting. AFK machines, minecarts, water streams and autoclickers earn at the AFK rate, and only one account per IP earns.
+
+- `/hc` your coins, your current rate and time to the next coin
+- `/hc top` most coins
+- `/hcshop` spend coins: netherite ingot 75, netherite upgrade template 40, elytra 200 (1 a week), enchanted golden apple 100 (1 a day), Mending book 60, 2 shulker shells 25, 16 bottles o' enchanting 10
+
 ## Shop
 
 - `/shop` opens the shop: End, Nether, Gear, Food and Materials pages. Left click buys, right click sells, shift for a stack
@@ -38,7 +46,8 @@ Every command on Hyzen SMP. Kept up to date as features ship; the date of the la
 ## Auction house
 
 - `/ah` open it (also `/auction`)
-- `/ah <item>` search, e.g. `/ah diamond`
+- `/ah <item>` search, e.g. `/ah diamond`. Also finds renamed items by their name
+- `/ah seller <player>` (or `/ah @player`) everything one player is selling
 - `/ah sell <price>` list what you're holding, or use the Sell button to pick anything from your inventory
 - `/ah selling` your listings, click one to cancel it
 - `/ah sold` your history (sold, bought, expired)
@@ -51,14 +60,16 @@ Sellers get paid instantly. Right click a shulker to see inside before buying.
 - `/msg <player> <message>` private message (also `/tell`, `/w`, `/pm`)
 - `/r <message>` reply
 
+Swearing is blocked in chat, messages, signs, item names and AH listings. Each blocked message is a warning; the third mutes you for a day, and warnings clear after 7 days.
+
 ## Settings
 
 - `/settings` turn on or off: teleport requests, summon requests, public chat, payments, private messages, fast buy (skip the AH confirm), and where your scoreboard sits (right, top, above the hotbar, or hidden)
 
 ## Rewards
 
-- `/daily` daily reward and login streak (miss a day and it starts over), plus playtime rewards
-- `/leaderboard` (also `/lb`, `/top`) top money, kills, mob kills and playtime: today, this week, this month, all time
+- `/daily` daily reward and login streak (miss a day and it starts over)
+- `/leaderboard` (also `/lb`, `/top`) top money, kills, mob kills and playtime: today, this week, this month, all time. Money and kills update live
 
 ## Other
 
@@ -80,6 +91,6 @@ Ranks also show as a name colour in chat and tab, with ranked players at the top
 
 ## Staff (not for players)
 
-- Helper: `/kick`, `/co inspect`, `/co lookup` (block history), `/sc` staff chat, `/sus` players the anti-cheat flagged, `/perf` server performance
-- Mod: everything above plus `/ban <player> <reason> <30m|12h|7d>`, `/unban`, `/banhistory`, `/vanish`, `/staffmode`, `/totempop`, `/tp`, `/bal <player>`. Mods are never combat tagged
-- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hz reload`
+- Helper: `/kick`, `/warnings <player>`, `/co inspect`, `/co lookup` (block history), `/sc` staff chat, `/sus` players the anti-cheat flagged, `/perf` server performance
+- Mod: everything above plus `/mute <player> <reason> <30m|12h|1d>`, `/unmute`, `/ban <player> <reason> <30m|12h|7d>`, `/unban`, `/banhistory`, `/vanish`, `/staffmode`, `/totempop`, `/tp`, `/bal <player>`. Mods are never combat tagged
+- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hc give|take|set|check`, `/hz reload`
