@@ -55,6 +55,15 @@ A second currency, earned just by playing: 1 coin every 10 minutes AFK, 8 moving
 
 Sellers get paid instantly. Right click a shulker to see inside before buying.
 
+## Buy orders
+
+- `/orders` open orders, best paying first. Click one to hand in the items from your inventory and get paid at once (also `/ah orders`)
+- `/orders create <item|hand> <amount> <price each>` post what you want to buy. The money is held while the order is open. Use `hand` for potions, enchanted books and tipped arrows
+- `/orders mine` your orders, click an open one to cancel it
+- `/orders fill <id> [amount]`, `/orders cancel <id>`
+
+Up to 5 open orders each. Delivered items go to your `/ah` mailbox. Orders end after 7 days and whatever was not filled is refunded.
+
 ## Chat
 
 - `/msg <player> <message>` private message (also `/tell`, `/w`, `/pm`)
