@@ -64,6 +64,14 @@ Sellers get paid instantly. Right click a shulker to see inside before buying.
 
 Up to 5 open orders each. Delivered items go to your `/ah` mailbox. Orders end after 7 days and whatever was not filled is refunded.
 
+## Bounties
+
+- `/bounty` the biggest bounties, highest first
+- `/bounty <player>` how much is on a player's head
+- `/bounty <player> <amount>` put money on a player's head (at least $100). The money is taken at once, and bounties on one player add up
+
+Whoever kills the player gets the whole pot, and the server announces it. You cannot claim a bounty on yourself or on someone who plays from the same address as you.
+
 ## Chat
 
 - `/msg <player> <message>` private message (also `/tell`, `/w`, `/pm`)
@@ -102,4 +110,4 @@ Ranks also show as a name colour in chat and tab, with ranked players at the top
 
 - Helper: `/kick`, `/warnings <player>`, `/co inspect`, `/co lookup` (block history), `/sc` staff chat, `/sus` players the anti-cheat flagged, `/perf` server performance
 - Mod: everything above plus `/mute <player> <reason> <30m|12h|1d>`, `/unmute`, `/ban <player> <reason> <30m|12h|7d>`, `/unban`, `/banhistory`, `/vanish`, `/staffmode`, `/totempop`, `/tp`, `/bal <player>`. Mods are never combat tagged
-- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hc give|take|set|check`, `/hz reload`
+- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hc give|take|set|check`, `/bounty admin remove <player>` (ends a player's bounties and refunds them), `/hz reload`
