@@ -72,6 +72,34 @@ Up to 5 open orders each. Delivered items go to your `/ah` mailbox. Orders end a
 
 Whoever kills the player gets the whole pot, and the server announces it. You cannot claim a bounty on yourself or on someone who plays from the same address as you.
 
+## Friends
+
+- `/friend` your friends menu, online friends first (also `/friends`)
+- `/friend add <player>` send a friend request, they have to accept
+- `/friend accept <player>`, `/friend deny <player>`
+- `/friend remove <player>`, `/friend list`
+
+Friends see a message when you join or leave. Up to 100 friends each.
+
+## Parties
+
+- `/party invite <player>` start a party or invite to yours
+- `/party accept [player]`, `/party leave`
+- `/party kick <player>` (party leader)
+- `/party chat <message>` talk to your party, or `/party chat` on its own to switch your chat to the party and back
+
+Up to 8 in a party. Party members cannot hurt each other. A party ends when one member is left.
+
+## Clans
+
+- `/clan create <name> <tag>` make a clan. The name is 3 to 16 letters, numbers or `_`, the tag 2 to 5 letters
+- `/clan invite <player>`, `/clan kick <player>`, `/clan disband` (clan owner)
+- `/clan accept [clan]`, `/clan leave`
+- `/clan chat <message>` talk to your clan, or `/clan chat` on its own to switch your chat to the clan and back
+- `/clan info [clan]` who is in a clan
+
+Your clan's `[TAG]` shows before your name in chat. Up to 20 members, and making a clan is free.
+
 ## Chat
 
 - `/msg <player> <message>` private message (also `/tell`, `/w`, `/pm`)
@@ -110,4 +138,4 @@ Ranks also show as a name colour in chat and tab, with ranked players at the top
 
 - Helper: `/kick`, `/warnings <player>`, `/co inspect`, `/co lookup` (block history), `/sc` staff chat, `/sus` players the anti-cheat flagged, `/perf` server performance
 - Mod: everything above plus `/mute <player> <reason> <30m|12h|1d>`, `/unmute`, `/ban <player> <reason> <30m|12h|7d>`, `/unban`, `/banhistory`, `/vanish`, `/staffmode`, `/totempop`, `/tp`, `/bal <player>`. Mods are never combat tagged
-- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hc give|take|set|check`, `/bounty admin remove <player>` (ends a player's bounties and refunds them), `/hz reload`
+- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hc give|take|set|check`, `/bounty admin remove <player>` (ends a player's bounties and refunds them), `/clan admin disband <clan>`, `/hz reload`
