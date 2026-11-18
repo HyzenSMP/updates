@@ -100,6 +100,13 @@ Up to 8 in a party. Party members cannot hurt each other. A party ends when one 
 
 Your clan's `[TAG]` shows before your name in chat. Up to 20 members, and making a clan is free.
 
+## Crates and cosmetics
+
+- `/crates` (also `/crate`) buy 1 or 5 keys at $5,000 each with in-game money, and open them. Each key gives one cosmetic: a chat tag or a trail, common, rare or legendary
+- `/cosmetics` (also `/cosmetic`) wear or take off a tag you own (shown in chat after your clan tag) or a trail (particles while you walk)
+
+Cosmetics only, no gear, money or XP. A duplicate gives back a quarter of what the key cost, and a new legendary is announced to the server.
+
 ## Chat
 
 - `/msg <player> <message>` private message (also `/tell`, `/w`, `/pm`)
@@ -138,4 +145,4 @@ Ranks also show as a name colour in chat and tab, with ranked players at the top
 
 - Helper: `/kick`, `/warnings <player>`, `/co inspect`, `/co lookup` (block history), `/sc` staff chat, `/sus` players the anti-cheat flagged, `/perf` server performance
 - Mod: everything above plus `/mute <player> <reason> <30m|12h|1d>`, `/unmute`, `/ban <player> <reason> <30m|12h|7d>`, `/unban`, `/banhistory`, `/vanish`, `/staffmode`, `/totempop`, `/tp`, `/bal <player>`. Mods are never combat tagged
-- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hc give|take|set|check`, `/bounty admin remove <player>` (ends a player's bounties and refunds them), `/clan admin disband <clan>`, `/hz reload`
+- Admin: everything above plus `/ban ... blacklist` (permanent), `/banrollback <staff>`, `/gamemode`, `/co rollback`, `/co restore`, `/eco give|take|set`, `/hc give|take|set|check`, `/bounty admin remove <player>` (ends a player's bounties and refunds them), `/clan admin disband <clan>`, `/crates give <player> <keys>` (free keys), `/hz reload`
